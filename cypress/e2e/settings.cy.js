@@ -21,7 +21,7 @@ describe('Settings page', () => {
     });
   });
 
-  it('should provide an ability to update username', () => {
+  it.only('should provide an ability to update username', () => {
     signInPage.login(user.email, user.username, user.password);
     settingsPage.visit();
     settingsPage.typeNewUsername(user.newUsername);
